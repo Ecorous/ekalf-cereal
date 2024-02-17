@@ -82,12 +82,12 @@
           signingkey = "/home/ecorous/.ssh/git.pub";
         };
 
+        "gpg \"ssh\"".program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
         commit.gpgsign = true;
-        
       };
     };
   };
-
+  
   services.syncthing = {
     enable = true;
     user = "ecorous";

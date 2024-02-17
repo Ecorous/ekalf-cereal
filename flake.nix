@@ -7,7 +7,7 @@
 
   outputs = { self, nixpkgs }: {
     nixosConfigurations = {
-      willow = lib.nixosSystem {
+      willow = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [./willow.nix];
       };
