@@ -1,7 +1,7 @@
 { # home.packages.nushell
     enable = true;
-    configFile.source = "./config/config.nu";
-    envFile.source = "./config/env.nu";
+    configFile.source = ./config/config.nu;
+    envFile.source = ./config/env.nu;
     extraConfig = ''
     def paru [] {
         echo "dumbass, you're not on arch, you're on nixos"
@@ -12,5 +12,5 @@
         echo nixos-switch: ([$sub ing] | str join) the system flake | str join " "
         sudo nixos-rebuild $sub --flake $flake
     }
-    ''
+    '';
 }

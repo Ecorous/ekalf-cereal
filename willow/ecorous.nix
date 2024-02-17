@@ -54,11 +54,11 @@
     };
 
     services =  {
-        polybar.enable = true;
+        polybar = import ./polybar.nix;
         kdeconnect.enable = true;
         kdeconnect.indicator = true;
         flameshot.enable = true;
     };
 
-    home.file = ./ecorous.files.nix;
+    home.file = import ./ecorous.files.nix;
 }
