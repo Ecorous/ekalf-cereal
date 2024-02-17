@@ -80,7 +80,7 @@
         user = {
           name = "Ecorous";
           email = "ecorous@outlook.com";
-          signingkey = "/home/ecorous/.ssh/git.pub";
+          signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIazU90lTF7rPY11hzMA2CdOXmdaOBTZWJ25PBDl1gzS";
         };
 
         "gpg \"ssh\"".program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
@@ -157,6 +157,7 @@
     wget
     nushell
     btop
+    python3
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

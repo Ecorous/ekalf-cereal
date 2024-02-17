@@ -42,12 +42,12 @@
             "github.com" = {
                 hostname = "github.com";
                 user = "git";
-                identityFile = "/home/ecorous/.ssh/git.pub";
+                identityFile = "~/.ssh/git.pub";
             };
             "*" = { 
-                identityFile = "/home/ecorous/.ssh/auth.pub";
+                identityFile = "~/.ssh/auth.pub";
                 extraOptions = {
-                    identityAgent = "/home/ecorous/.1password/ssh-agent.sock";
+                    identityAgent = "~/.1password/ssh-agent.sock";
                 };
             };
         };
