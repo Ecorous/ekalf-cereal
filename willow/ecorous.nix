@@ -1,3 +1,4 @@
+
 {
     # configure ecorous user
     # using nix home-manager
