@@ -10,6 +10,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./willow/hardware.nix
+      ./willow/upgrade-diff.nix
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
@@ -87,6 +88,15 @@
       };
     };
   };
+
+  fonts = {
+    fontconfig.enable = true;
+    packages = with pkgs; [
+      # Nerd Fonts
+      nerdfonts
+    ];
+
+  };
   
   services.syncthing = {
     enable = true;
@@ -127,6 +137,7 @@
     shell = pkgs.nushell;
     packages = with pkgs; [ # put gui packages only here or in programs above; don't put in systemPackages
       firefox
+      thunderbird
       tree
       helix
       kitty
