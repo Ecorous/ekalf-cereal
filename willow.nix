@@ -9,7 +9,7 @@
   
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./willow/hardware.nix
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
