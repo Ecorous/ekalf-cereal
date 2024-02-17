@@ -69,6 +69,7 @@
     _1password.enable = true;
     _1password-gui.enable = true;
     _1password-gui.polkitPolicyOwners = ["ecorous"];
+    adb.enable = true;
 
     git = {
       enable = true;
@@ -133,7 +134,7 @@
   users.users.ecorous = {
     description = "Dawn";
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "adbusers" ]; # Enable ‘sudo’ and 'adb' for the user.
     shell = pkgs.nushell;
     packages = with pkgs; [ # put gui packages only here or in programs above; don't put in systemPackages
       firefox
