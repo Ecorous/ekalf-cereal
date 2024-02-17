@@ -43,10 +43,10 @@
             "github.com" = {
                 hostname = "github.com";
                 user = "git";
-                identityFile = "~/.ssh/git.pub";
+                #identityFile = "~/.ssh/git.pub";
             };
             "*" = { 
-                identityFile = "~/.ssh/auth.pub";
+                #identityFile = "~/.ssh/auth.pub";
                 extraOptions = {
                     identityAgent = "~/.1password/ssh-agent.sock";
                 };
