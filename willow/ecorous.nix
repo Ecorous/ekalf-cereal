@@ -48,7 +48,7 @@
             "*" = { 
                 #identityFile = "~/.ssh/auth.pub";
                 extraOptions = {
-                    identityAgent = "~/.1password/ssh-agent.sock";
+                    IdentityAgent = "~/.1password/agent.sock";
                 };
             };
         };

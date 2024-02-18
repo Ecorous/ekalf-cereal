@@ -11,6 +11,7 @@
     [ # Include the results of the hardware scan.
       ./willow/hardware.nix
       ./willow/upgrade-diff.nix
+      ./willow/docker.nix
     ];
 
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
@@ -144,11 +145,13 @@
       kitty
       prismlauncher
       jetbrains.idea-ultimate
+      github-copilot-intellij-agent
       jetbrains.rider
       flameshot
       vscode
       packwiz
       polybarFull
+      nodejs_21
     ];
   };
   # List packages installed in system profile. To search, run:
@@ -159,6 +162,15 @@
     nushell
     btop
     python3
+    graalvm-ce
+    zulu8
+    zulu11
+    zulu17
+    temurin-bin
+    temurin-bin-8
+    temurin-bin-11
+    temurin-bin-17
+    p7zip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
