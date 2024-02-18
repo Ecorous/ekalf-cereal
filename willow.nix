@@ -152,6 +152,7 @@
       packwiz
       polybarFull
       nodejs_21
+      libnotify
     ];
   };
   # List packages installed in system profile. To search, run:
