@@ -12,8 +12,15 @@
       willow = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./willow.nix
+          ./willow/system.nix
           home-manager.nixosModules.home-manager ./willow/home-manager.nix
+        ];
+      };
+      yggdrasil = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./yggdrasil/system.nix
+          home-manager.nixosModules.home-manager ./yggdrasil/home-manager.nix
         ];
       };
     };
