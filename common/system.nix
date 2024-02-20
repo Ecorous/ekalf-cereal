@@ -76,6 +76,7 @@
       libnotify
       nixfmt
       onefetch
+      qbittorrent
     ];
   };
 
