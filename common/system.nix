@@ -77,6 +77,7 @@
       nixfmt
       onefetch
       qbittorrent
+      lutris
     ];
   };
 
