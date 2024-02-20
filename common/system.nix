@@ -74,6 +74,7 @@
       polybarFull
       nodejs_21
       libnotify
+      nixfmt
     ];
   };
 
