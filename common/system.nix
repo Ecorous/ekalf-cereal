@@ -75,6 +75,7 @@
       nodejs_21
       libnotify
       nixfmt
+      onefetch
     ];
   };
 
