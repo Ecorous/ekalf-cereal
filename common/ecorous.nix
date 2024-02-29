@@ -23,8 +23,15 @@
     };
     hyfetch.settings = {
       preset = "lesbian";
+      light_dark = "dark";
+      lightness = 0.62;
       mode = "rgb";
-      colorAlign = { mode = "horizontal"; };
+      color_align = { mode = "horizontal"; custom_colors = []; fore_back = null; };
+      backend = "neofetch";
+      args = null;
+      distro = null;
+      pride_month_shown = [];
+      pride_month_disable = false;
     };
     ssh.matchBlocks = {
       "github.com" = {

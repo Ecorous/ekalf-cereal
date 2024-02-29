@@ -22,6 +22,7 @@
     _1password.enable = true;
     _1password-gui.enable = true;
     _1password-gui.polkitPolicyOwners = [ "ecorous" ];
+    steam.enable = true;
 
     git = {
       enable = true;
@@ -77,7 +78,16 @@
       nixfmt
       onefetch
       qbittorrent
-      lutris
+      wine
+      wine64
+      protontricks
+      signal-desktop
+      (pkgs.discord-canary.override {
+        withOpenASAR = true;
+        withVencord = true;
+      })
+      gcc_multi
+      lld
     ];
   };
 

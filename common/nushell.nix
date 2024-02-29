@@ -12,5 +12,8 @@
         echo nixos-switch: ([$sub ing] | str join) the system flake | str join " "
         sudo nixos-rebuild $sub --flake $flake
     }
+    def disks [] {
+      df -h | str replace "Mounted on" "Mountpoint" | detect columns | sort-by Use% | reverse | move Mountpoint --before Filesystem | rename "Mount" "Device" "Total Size" "Used" "Available" "Used (%)"
+    }
   '';
 }
