@@ -47,7 +47,7 @@
   };
 
   services = {
-    polybar = import ./polybar.nix;
+    #polybar = import ./polybar.nix;
     kdeconnect = {
       enable = true;
       indicator = true;

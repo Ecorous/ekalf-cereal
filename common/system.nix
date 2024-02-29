@@ -62,18 +62,16 @@
     packages = with pkgs; [
       firefox
       thunderbird
-      tree
       helix
       kitty
       prismlauncher
       jetbrains.idea-ultimate
       github-copilot-intellij-agent
-      jetbrains.rider
+      #jetbrains.rider
       flameshot
       vscode
       packwiz
       polybarFull
-      nodejs_21
       libnotify
       nixfmt
       onefetch
@@ -97,13 +95,8 @@
     nushell
     btop
     python3
-    graalvm-ce
-    zulu8
-    zulu11
-    zulu17
     temurin-bin
     temurin-bin-8
-    temurin-bin-11
     temurin-bin-17
     p7zip
   ];

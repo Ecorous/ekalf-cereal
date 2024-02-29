@@ -10,7 +10,8 @@
   "plasma_login.sh" = {
     text = ''
       #!/usr/bin/env bash
-      polybar &
+      #polybar &
+      1password &
     '';
     executable = true;
   };
