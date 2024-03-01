@@ -4,7 +4,7 @@
   imports = [ # Include the results of the hardware scan.
     ../common/system.nix
     ../common/plasma.nix
-    #./hardware.nix
+    ./hardware.nix
   ];
 
   networking.hostName = "yggdrasil";
