@@ -86,6 +86,7 @@
       })
       gcc_multi
       lld
+      vlc
     ];
   };
 
