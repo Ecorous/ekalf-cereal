@@ -15,4 +15,13 @@
     '';
     executable = true;
   };
+  "shells/node.nix" = {
+    source = ../global/node.nix;
+  };
+  "wallpapers/wallpaper.png" = {
+    source = ../global/wallpaper.png;
+  };
+  "postgres-docker.zip" = {
+    source = ../global/postgres-docker.zip;
+  };
 } # }

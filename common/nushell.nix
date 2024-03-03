@@ -15,5 +15,13 @@
     def disks [] {
       df -h | str replace "Mounted on" "Mountpoint" | detect columns | sort-by Use% | reverse | move Mountpoint --before Filesystem | rename "Mount" "Device" "Total Size" "Used" "Available" "Used (%)"
     }
+
+    def shell [--nix_file: string = "shell.nix", --command: string = "nu"] {
+      nix-shell $nix_file --command $command
+    }
+
+    def shellOf-node [] {
+      shell --nix_file /home/ecorous/shells/node.nix
+    }
   '';
 }

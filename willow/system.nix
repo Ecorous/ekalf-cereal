@@ -11,6 +11,7 @@
     ../common/system.nix
     ../common/plasma.nix
     ./hardware.nix
+    ./bluetooth.nix
   ];
 
   networking.hostName = "willow";
