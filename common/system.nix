@@ -101,7 +101,10 @@
     temurin-bin-8
     temurin-bin-17
     p7zip
+    rustdesk
   ];
+
+  services.tailscale.enable = true;
 
   services.openssh.enable = true;
 
