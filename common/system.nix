@@ -110,7 +110,10 @@
     temurin-bin-17
     p7zip
     ntfs3g
+    rustdesk
   ];
+
+  services.tailscale.enable = true;
 
   services.openssh.enable = true;
 
