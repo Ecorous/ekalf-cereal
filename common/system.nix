@@ -52,6 +52,11 @@
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.opengl = {
+    enable = true;
+    extraPackages = [ pkgs.libGL ];
+    setLdLibraryPath = true;
+  };
 
   users.defaultUserShell = pkgs.nushell;
   users.users.ecorous = {
@@ -60,6 +65,7 @@
     extraGroups = [ "wheel" ];
     shell = pkgs.nushell;
     packages = with pkgs; [
+      gh
       firefox
       thunderbird
       helix
@@ -88,6 +94,8 @@
       lld
       vlc
       carapace
+      micromamba
+      nodejs-slim_21
     ];
   };
 
@@ -101,6 +109,7 @@
     temurin-bin-8
     temurin-bin-17
     p7zip
+    ntfs3g
   ];
 
   services.openssh.enable = true;

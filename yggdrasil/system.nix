@@ -5,6 +5,11 @@
     ../common/system.nix
     ../common/plasma.nix
     ./hardware.nix
+    ./nvidia.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    tailscale
   ];
 
   networking.hostName = "yggdrasil";

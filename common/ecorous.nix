@@ -9,7 +9,7 @@
 
   programs = {
     home-manager.enable = true;
-    gh.enable = true;
+    #gh.enable = true;
     ssh.enable = true;
     btop.enable = true;
     helix.enable = true;
